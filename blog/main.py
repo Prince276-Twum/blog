@@ -17,7 +17,7 @@ from forms import CreatePostForm, RegisterForm, LoginForm, Comment
 from flask_gravatar import Gravatar
 import os
 app = Flask(__name__)
-app.config['SECRET_KEY'] =  os.environ.get("SECRET_KEY")
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 ckeditor = CKEditor(app)
 Bootstrap(app)
 ##CONNECT TO DB
