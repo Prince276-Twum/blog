@@ -1,0 +1,91 @@
+{% include "header.html" %}
+<!--<img class="flag flag-log" src="static/image/pp.jpeg">-->
+ <link href="static/css/league.css" rel="stylesheet">
+<div class="main1">
+    <div class="main2 table-responsive">
+        <center>
+            <h2 class="prem-1"> PREMIER LEAGUE </h2>
+            <p class="pt">POINTS TABLE 2019</p>
+            <table class="table">
+                <a href="{{url_for('new_team')}}">add team </a>
+                <thead>
+                    <td>Pos.</td>
+                    <td class="name">CLUBS</td>
+                    <td>P</td>
+                    <td>W</td>
+                    <td>D</td>
+                    <td>L</td>
+                    <td>GD</td>
+                    <td>POINTS</td>
+                </thead>
+                <tbody>
+                    {% for team in data[:4]  %}
+
+                    <tr class="top">
+                        <td>tea</td>
+                        <td class="name"><img class="logo2" src="static/image/sch.jpeg">&nbsp;&nbsp; {{team.team_name}}</td>
+                        <td>7</td>
+                        <td>6</td>y
+                        <td>1</td>
+                        <td>0</td>
+                        <td>+18</td>
+                        <td>19</td>
+                    </tr>
+                    {% endfor %}
+                {% for team in data[4:] %}
+                    <tr>
+                        <td>5</td>
+                        <td class="name"><img class="logo2" src="https://i.imgur.com/BxK4RFF.png">&nbsp;&nbsp; {{team.team_name}}</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>+5</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                {% endfor %}
+<!--                        <td>6</td>-->
+<!--                        <td class="name"><img class="logo2" src="https://i.imgur.com/JHEQjdz.png">&nbsp;&nbsp; WATFORD</td>-->
+<!--                        <td>7</td>-->
+<!--                        <td>4</td>-->
+<!--                        <td>1</td>-->
+<!--                        <td>2</td>-->
+<!--                        <td>+3</td>-->
+<!--                        <td>13</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>7</td>-->
+<!--                        <td class="name"><img class="logo2" src="https://i.imgur.com/rG2UC1J.jpg">&nbsp;&nbsp; BOURNEMOUTH</td>-->
+<!--                        <td>7</td>-->
+<!--                        <td>4</td>-->
+<!--                        <td>1</td>-->
+<!--                        <td>2</td>-->
+<!--                        <td>0</td>-->
+<!--                        <td>13</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>8</td>-->
+<!--                        <td class="name"><img class="logo2" src="https://i.imgur.com/1GNZGeL.png">&nbsp;&nbsp; LEICESTER CITY</td>-->
+<!--                        <td>7</td>-->
+<!--                        <td>4</td>-->
+<!--                        <td>0</td>-->
+<!--                        <td>3</td>-->
+<!--                        <td>+3</td>-->
+<!--                        <td>12</td>-->
+<!--                    </tr>-->
+<!--                    <tr>-->
+<!--                        <td>9</td>-->
+<!--                        <td class="name"><img class="logo2" src="https://i.imgur.com/ypsEVRW.png">&nbsp;&nbsp; WOLVERHAMPTON WANDERERS</td>-->
+<!--                        <td>7</td>-->
+<!--                        <td>3</td>-->
+<!--                        <td>3</td>-->
+<!--                        <td>1</td>-->
+<!--                        <td>+2</td>-->
+<!--                        <td>12</td>-->
+<!--                    </tr>-->
+                </tbody>
+            </table>
+        </center>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+{% include "header.html" %}
+
+<head>
+<meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
+
+<meta content="width=1100" name="viewport">
+
+<title>Table Football matches</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all">
+
+</head>
+
+<body>
+  
+  
+  
+  
+<div style="margin-top: 3%;" ></div>
+    
+<div class="match_today container" id="match_today">
+<a style="margin-bottom: 1% " class="btn btn-danger" href="{{url_for('add_previous_match')}}"  >Add a previous match</a>
+<h2 style="background-color: #11181f" class="hft">Previous matches</h2>
+
+<div class="widget-content">
+
+<!--match mdw-->
+{% for each_pre in previous %}
+<div class="mnajiri">
+    <a class="cross-btn1" href="{{url_for('delete_prev ', prev_id=each_pre.id)}}">✘</a>
+     <p class="fullink" href="#"></p>
+       <div class="mnajiriin">
+         <div class="mpart1">
+           <div class="right_match">
+              <span class="right_tech">
+                 <img src="{{each_pre.opponent_image}}">
+                  <div class="fname">{{each_pre.opponent_club}}</div>
+               </span>
+           </div>
+                 <strong class="najiri1">{{each_pre.your_score}}-{{each_pre.opponent_score}}</strong>
+                 <div class="left_match">
+                   <span class="left_tech">
+                     <img src="{{each_pre.your_image}}">
+                       <div class="fname">{{each_pre.your_club}}</div>
+                   </span>
+                </div>
+            </div>
+               <div class="details_match">
+                  <span class="first_match">
+                     <i aria-hidden="true" class="fa fa-clock-o"></i><b>{{each_pre.date}} </b>
+                   </span>
+                   <span class="thany"><i aria-hidden="true" class="fa fa-futbol-o"></i><b>UCC Champions League</b>
+                   </span>
+                   <span class="liga_mdw"><i aria-hidden="true" class="fa fa-desktop"></i><b>UCC Sport HD1 </b>
+                   </span>
+              </div>
+      </div>
+
+   </div>
+
+{% endfor %}
+
+
+
+
+
+
+
+</div></div>
+
+  
+  
+  
+<br>
+
+<p style="text-align:center;"><a  href="https://mdwab.blogspot.com/2019/05/Table-Football-matches-blogger-css.html">
+
+</a></p>
+
+
+</body></html>

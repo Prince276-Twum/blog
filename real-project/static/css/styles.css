@@ -1,0 +1,248 @@
+body{
+
+    margin-top: 3px;
+}
+
+
+
+
+.navbar-brand{
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 25px;
+ 
+}
+
+.tx{
+    text-align: left;
+}
+
+#nav-bar-1{
+    background-color:  #0e141a;
+    
+}
+
+.own-e{
+    padding-bottom: 34px;
+}
+
+
+.navbar-brand-img{
+    width: 40%;
+    border-radius: 800px;
+    
+}
+.logo{
+    text-align: center;
+    position:absolute;
+    width: 20%;
+}
+
+.table{
+    text-align: center;
+    
+}
+
+a{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.sec-nave{
+   background-color:  #11181f;
+   padding: 0 10% 0 10%;
+   
+}
+
+
+
+.link-item{
+    margin-right: 7px;
+
+}
+.nav-link{
+font-size: 12px
+}
+
+.navbar .container-fluid{
+    padding: 0;
+
+}
+.container-fluid{
+    padding: 4% 5% 4% 5%;
+
+}
+
+/* @media(max-width:1024px){
+    .navbar-light .navbar-brand{
+
+        width: 14%;
+} */
+.pich{
+    border-bottom: solid 34px
+}
+
+
+.first-naves{
+    padding: 0 10% 0 10%;
+
+}
+/* @media(max-width:1024px){
+   .first-naves{
+   padding: 0
+   }
+} */
+
+
+ 
+.top-image{
+    width: 100%;
+    margin-bottom: 45px
+}
+    
+
+.text-pre-nex{
+    background-color:#DCEDC8;
+    text-align: center;
+    position: relative;
+    top: 6%
+}
+
+.nav-item{
+    margin-left: 6%;
+}
+
+.navbar-brand{
+    border-radius: 100%;
+    width: 5%;
+}
+.team-img{
+    border-radius: 100%;
+    width: 50%;
+    margin-bottom:  5%;
+    text-align: center;
+    
+
+    /* text-align: center; */
+}
+
+
+/* score table section */
+.row-pre{
+    text-align: center;
+}
+
+
+
+.re{
+    text-align: center;
+    background-color: #11181f;
+    color: white;
+    font-size: 34px;
+ 
+
+}
+.piche{
+    
+    border-top: solid 34px;
+    position: relative;
+    bottom: 80px;
+}
+
+.piche2{
+    border-top: solid 34px;
+    position: relative;
+    bottom: 50px;
+    
+}
+
+
+.h2-team-n{
+    padding-top: 0  3%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+    
+    
+}
+
+#table-score{
+    padding: 3% 3% 0 3%;
+}
+
+.j-prew{
+    height: 300px;
+}
+
+/* .j-c{
+    border-top: solid white ;
+    background-color: #fff;
+    margin-top: 199px;
+     */
+
+/* } */
+/* .j-ce{
+    border-top: solid red;
+} */
+.jumbotron{
+    padding: 2% 0 0 0;
+}
+
+.score-dig{
+    position: relative;
+    top: 24%;
+    color: rgb(104, 90, 90);
+    font-family: 'Montserrat', sans-serif;
+    
+ 
+   
+}
+
+.col-end{
+    color: black;
+    position: relative;
+    left: 0.5%;
+    bottom: 7%;
+    width: 100%;
+    
+}
+
+.new-section34{
+    padding: 3%;
+}
+
+.maxi{
+    position: absolute;
+    top: 85%;
+}
+
+
+@media(max-width:1024px){
+    .new-ro{
+        padding-bottom: 5%;
+    }
+    
+}
+    
+.new-ro{
+    padding-top: 1%;
+}
+
+
+
+.hft{
+
+    background-color: #11181f;
+}
+
+.help-block{
+    color: red;
+}
+
+.cross-btn1{
+    text-align: center;
+    color: red;
+    margin-left: 97%
+}
