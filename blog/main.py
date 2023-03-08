@@ -109,7 +109,7 @@ def get_all_posts():
 def register():
     register_form = RegisterForm()
 
-    if request.method == "POST":
+    if register_form.validate_on_submit():
         if Users.query.filter_by(email=request.form["email"]).first():
             flash("You've already signed up with that email, log in instead!")
             return redirect(url_for("login"))
@@ -129,7 +129,7 @@ def register():
 @app.route('/login', methods=["POST", "GET"])
 def login():
     login_form = LoginForm()
-    if request.method == "POST":
+    if login_form.validate_on_submit():
         login_info = request.form
 
         filtering_db = Users.query.filter_by(email=login_info["email"]).first()
